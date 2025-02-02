@@ -1,0 +1,613 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image:url("/home/irin/tinkerhack1/backreg.png");
+            font-family: Arial, sans-serif;
+            font-size: medium;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:white;
+            background-size: cover;
+        }
+
+     /*  header img {
+            width: 80px; 
+            height: auto;
+          position:relative;
+        /*  top:0px;
+            left:0px; 	
+            margin:0px;*/
+            
+            }
+            
+.container {
+    background: rgba(255, 255, 255, 0.9); /* White background with 70% transparency */
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional subtle shadow */
+    text-align: center;
+     z-index: 10; /* Ensure the container is above other elements */
+            position: relative; 
+}
+
+.logo{
+	position:absolute;
+	top:20px;
+	left:20px;
+	}
+	
+.logo img {
+            width: 70px;
+            height: auto;
+           border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            color: #000080;
+            font-family: serif;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .form-row div {
+            flex: 1;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight:bold;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: medium;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        button {
+            background-color: #000080 ;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+
+        button:hover {
+            background-color: #6395ee;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+<img src="/home/irin/tinkerhack1/logoextra3.png"alt="logo">
+</div>
+</header>
+    <div class="container">
+        <h1>Register</h1>
+        <!--<form action="register.php" method="POST">--><form action="quest10.html?status=success" method="POST">
+
+            
+ <!--           <div class="form-row">
+                <div>
+                    <label for="name">Username:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="psw-confirm">Confirm Password:</label>
+                    <input type="password" id="psw-confirm" name="psw-confirm" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="weight">Weight (Kg):</label>
+                    <input type="number" id="weight" name="weight" required>
+                </div>
+                <div>
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="goal">Fitness Goal:</label>
+                    <select id="goal" name="goal" required>
+                        <option value="weight gain">Weight Gain</option>
+                        <option value="weight loss">Weight Loss</option>
+                        <option value="general fitness">General Fitness</option>
+                        <option value="flexibility">Improve Flexibility</option>
+                        <option value="strength">Improve Strength</option>
+                        <option value="cardio">Better Cardiovascular Health</option>
+                        <option value="sports performance">Enhance Sports Performance</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="level">Activity Level:</label>
+                    <select id="level" name="level" required>
+                        <option value="sedentary">Sedentary (No or little exercise)</option>
+                        <option value="light">Light (1-3 days/week)</option>
+                        <option value="moderate">Moderate (3-5 days/week)</option>
+                        <option value="active">Active (6-7 days/week)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: url("/home/irin/tinkerhack1/backreg.png");
+            font-family: Arial, sans-serif;
+            font-size: medium;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            background-size: cover;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            width: 70px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            color: #000080;
+            font-family: serif;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .form-row div {
+            flex: 1;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: medium;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        button {
+            background-color: #000080;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+
+        button:hover {
+            background-color: #6395ee;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/home/irin/tinkerhack1/logoextra3.png" alt="logo">
+    </div>
+</header>
+<div class="container">
+    <h1>Register</h1>
+    <form id="registerForm">
+        <div class="form-row">
+            <div>
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="psw-confirm">Confirm Password:</label>
+                <input type="password" id="psw-confirm" name="psw-confirm" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="weight">Weight (Kg):</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <div>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="goal">Fitness Goal:</label>
+                <select id="goal" name="goal" required>
+                    <option value="weight gain">Weight Gain</option>
+                    <option value="weight loss">Weight Loss</option>
+                    <option value="general fitness">General Fitness</option>
+                    <option value="flexibility">Improve Flexibility</option>
+                    <option value="strength">Improve Strength</option>
+                    <option value="cardio">Better Cardiovascular Health</option>
+                    <option value="sports performance">Enhance Sports Performance</option>
+                </select>
+            </div>
+            <div>
+                <label for="level">Activity Level:</label>
+                <select id="level" name="level" required>
+                    <option value="sedentary">Sedentary (No or little exercise)</option>
+                    <option value="light">Light (1-3 days/week)</option>
+                    <option value="moderate">Moderate (3-5 days/week)</option>
+                    <option value="active">Active (6-7 days/week)</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+document.getElementById('registerForm').onsubmit = function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const age = document.getElementById('age').value;
+    const gender = document.getElementById('gender').value;
+    const weight = document.getElementById('weight').value;
+    const height = document.getElementById('height').value;
+    const goal = document.getElementById('goal').value;
+    const level = document.getElementById('level').value;
+
+    const registrationData = {
+        name,
+        email,
+        password,
+        age,
+        gender,
+        weight,
+        height,
+        goal,
+        level
+    };
+
+    // Save registration data to local storage
+    localStorage.setItem("registrationData", JSON.stringify(registrationData));
+
+    // Redirect to questionnaire page
+    window.location.href = "quest10.html?status=success";
+};
+</script>
+
+</body>
+</html>
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: url("/home/irin/tinkerhack1/backreg.png");
+            font-family: Arial, sans-serif;
+            font-size: medium;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            background-size: cover;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            width: 70px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            color: #000080;
+            font-family: serif;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: medium;
+            font-weight: 500;
+        }
+
+        button {
+            background-color: #000080;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+
+        button:hover {
+            background-color: #6395ee;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/home/irin/tinkerhack1/logoextra3.png" alt="logo">
+    </div>
+</header>
+<div class="container">
+    <h1>Register</h1>
+    <form id="registerForm">
+        <label for="name">Username:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="psw-confirm">Confirm Password:</label>
+        <input type="password" id="psw-confirm" name="psw-confirm" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="weight">Weight (Kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" required>
+
+        <label for="goal">Fitness Goal:</label>
+        <select id="goal" name="goal" required>
+            <option value="weight gain">Weight Gain</option>
+            <option value="weight loss">Weight Loss</option>
+            <option value="general fitness">General Fitness</option>
+            <option value="flexibility">Improve Flexibility</option>
+            <option value="strength">Improve Strength</option>
+            <option value="cardio">Better Cardiovascular Health</option>
+            <option value="sports performance">Enhance Sports Performance</option>
+        </select>
+
+        <label for="level">Activity Level:</label>
+        <select id="level" name="level" required>
+            <option value="sedentary">Sedentary (No or little exercise)</option>
+            <option value="light">Light (1-3 days/week)</option>
+            <option value="moderate">Moderate (3-5 days/week)</option>
+            <option value="active">Active (6-7 days/week)</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+document.getElementById('registerForm').onsubmit = function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const age = document.getElementById('age').value;
+    const gender = document.getElementById('gender').value;
+    const weight = document.getElementById('weight').value;
+    const height = document.getElementById('height').value;
+    const goal = document.getElementById('goal').value;
+    const level = document.getElementById('level').value;
+
+    const registrationData = {
+        name,
+        email,
+        password,
+        age,
+        gender,
+        weight,
+        height,
+        goal,
+        level
+    };
+
+    // Save registration data to local storage
+    localStorage.setItem("registrationData", JSON.stringify(registrationData));
+    console.log(JSON.stringify(registrationData));
+    console.log(localStorage.getItem("registrationData"));
+
+
+    // Confirm storage and redirect to questionnaire
+    alert('Registration Successful! Redirecting to Questionnaire...');
+    window.location.href = "quest10.html?status=success";
+};
+</script>
+
+</body>
+</html>
+-->
+
+
+
+      
+

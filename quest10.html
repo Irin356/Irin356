@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Preference Questionnaire</title>
+    <style>
+        body {
+            /*font-family: 'Arial', sans-serif;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0;*/
+            font-family: 'Arial', sans-serif;
+            background: url('gym.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #4caf50;
+            font-size: 2rem;
+        }
+
+        .question-slide {
+            display: none;
+        }
+
+        .question-slide.active {
+            display: block;
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .options-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            justify-items: left;
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            background-color: #e3f2fd;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in;
+        }
+
+        label:hover {
+            background-color: #bbdefb;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #submitButton {
+            display: none;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Exercise Preference Questionnaire</h1>
+
+    <form id="questionnaireForm">
+        <!-- Slide 1: Favorite Exercise Type -->
+        <div class="question-slide active">
+            <div class="question-title">What is your favorite type of exercise?</div>
+            <div class="options-container">
+                <label><input type="radio" name="exerciseType" value="Running"> Running</label>
+                <label><input type="radio" name="exerciseType" value="Weightlifting"> Weightlifting</label>
+                <label><input type="radio" name="exerciseType" value="Yoga"> Yoga</label>
+                <label><input type="radio" name="exerciseType" value="Swimming"> Swimming</label>
+                <label><input type="radio" name="exerciseType" value="Cycling"> Cycling</label>
+                <label><input type="radio" name="exerciseType" value="Walking"> Walking</label>
+                <label><input type="radio" name="exerciseType" value="Hiking"> Hiking</label>
+                <label><input type="radio" name="exerciseType" value="Pilates"> Pilates</label>
+                <label><input type="radio" name="exerciseType" value="Aerobics">Aerobics </label>
+            </div>
+        </div>
+
+        <!-- Slide 2: Fitness Goal -->
+        <div class="question-slide">
+            <div class="question-title">What is your primary fitness goal?</div>
+            <div class="options-container">
+                <label><input type="radio" name="fitnessGoal" value="Weight Loss"> Weight Loss</label>
+                <label><input type="radio" name="fitnessGoal" value="Muscle Building"> Muscle Building</label>
+                <label><input type="radio" name="fitnessGoal" value="Improve Flexibility"> Improve Flexibility</label>
+                <label><input type="radio" name="fitnessGoal" value="General Fitness">General Fitness</label>
+                <label><input type="radio" name="fitnessGoal" value="Cardio"> Improve Cardiovascular Health</label>
+                <label><input type="radio" name="fitnessGoal" value="Weight Gain"> Weight Gain</label>
+                <label><input type="radio" name="fitnessGoal" value="Sports Performance">Sports Performance</label>
+                <label><input type="radio" name="fitnessGoal" value="Improve Mental Strength"> Improve Mental Health</label>
+                <label><input type="radio" name="fitnessGoal" value="Improve Strength">Improve Strength</label>
+                <label><input type="radio" name="fitnessGoal" value="Other">Other</label>
+            </div>
+        </div>
+         <div class="question-slide">
+            <div class="question-title">What type of workout environment do you prefer?</div>
+            <div class="options-container">
+                <label><input type="radio" name="environment" value="gym">Gym(Indoor)</label>
+                <label><input type="radio" name="environment" value="home">Home Workout(indoor)</label>
+                <label><input type="radio" name="environment" value="outdoor">Outdoor</label>
+                <label><input type="radio" name="environment" value="Yoga Studio">Yoga Studio</label>
+                <label><input type="radio" name="environment" value="other">Other</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">How do you feel about group workouts?</div>
+            <div class="options-container">
+                <label><input type="radio" name="group" value="alone">I prefer working out alone.</label>
+                <label><input type="radio" name="group" value="groups">I enjoy group workouts.</label>
+                <label><input type="radio" name="group" value="both">I like a mix of both.</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">What time of day do you prefer to exercise?</div>
+            <div class="options-container">
+                <label><input type="radio" name="time" value="early">Early Morning(before 7AM)</label>
+                <label><input type="radio" name="time" value="morning">Morning(7AM-12PM)</label>
+                <label><input type="radio" name="time" value="afternoon">Afternoon(12PM-5PM)</label>
+                <label><input type="radio" name="time" value="evening">Evening(5PM-8PM)</label>  
+                <label><input type="radio" name="time" value="night">Late Night(After 8PM)</label>         
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">How often would you like to exercise per week?</div>
+            <div class="options-container">
+                <label><input type="radio" name="times" value="low">1-2 times per week.</label>
+                <label><input type="radio" name="times" value="moderate">3-4 times per week.</label>
+                <label><input type="radio" name="times" value="high">5-6 days per week.</label>
+                <label><input type="radio" name="times" value="very high">Daily</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">What is your preferred workout duration?</div>
+            <div class="options-container">
+                <label><input type="radio" name="duration" value="small">Less than 30 minutes</label>
+                <label><input type="radio" name="duration" value="medium">30-60 minutes</label>
+                <label><input type="radio" name="duration" value="big">1-2 hours</label>
+                <label><input type="radio" name="duration" value="bigger">More than 2 hours</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">What is your preferred intensity for workouts?</div>
+            <div class="options-container">
+                <label><input type="radio" name="intensity" value="low">Low Intensity(Eg:Walking,Yoga)</label>
+                <label><input type="radio" name="intensity" value="moderate">Moderate Intensity(Eg:Jogging,Light Weightlifting)</label>
+                <label><input type="radio" name="intensity" value="high">High Intensity(Eg:Heavy Weightlifting)</label>
+                <label><input type="radio" name="intensity" value="depends">Depends on the exercise type</label>
+            </div>
+        </div>
+  
+        <div class="question-slide">
+            <div class="question-title">Do you prefer to track your progress?</div>
+            <div class="options-container">
+                <label><input type="radio" name="progress" value="yes">Yes, I like tracking everything(workout,nutrition,sleep,etc)</label>
+                <label><input type="radio" name="progress" value="Yes">Yes,but only workout progress</label>
+                <label><input type="radio" name="progress" value="no">I don't like tracking</label>
+                <label><input type="radio" name="progress" value="occasionally">I prefer occasional ckeck-ins</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">What is your current fitness level?</div>
+            <div class="options-container">
+                <label><input type="radio" name="level" value="beginner">Beginner(Just starting to workout)</label>
+                <label><input type="radio" name="level" value="intermediate">Intermediate(I have been working out for some time)</label>
+                <label><input type="radio" name="level" value="advanced">Advanced(I workout regularly and intensely)</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">Do you follow any special diet?</div>
+            <div class="options-container">
+                <label><input type="radio" name="diet" value="yes">Yes,I follow a specific diet(Eg:keto,vegan,etc)</label>
+                <label><input type="radio" name="diet" value="no">No,I eat a regular diet</label>
+                <label><input type="radio" name="diet" value="help">I need help deciding on a diet</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">Do you have any fitness equipment at home? </div>
+            <div class="options-container">
+                <label><input type="radio" name="equipment" value="yes">Yes,I have basic equipment(dumbbell,etc)</label>
+                <label><input type="radio" name="equipment" value="full">Yes,I have a full home gym</label>
+                <label><input type="radio" name="eqipment" value="no">No,I prefer bodyweight exercises</label>
+                <label><input type="radio" name="equipment" value="No">No,I workout at gym</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">How important is mental health to you in your fitness journey?</div>
+            <div class="options-container">
+                <label><input type="radio" name="importance" value="vimp">Very Important</label>
+                <label><input type="radio" name="importance" value="imp">somewhat important</label>
+                <label><input type="radio" name="importance" value="not">Not very important</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">Do you follow a reglar sleep schedule? </div>
+            <div class="options-container">
+                <label><input type="radio" name="sleep" value="yes">Yes</label>
+                <label><input type="radio" name="sleep" value="no">No</label>
+                <label><input type="radio" name="sleep" value="some">Sometimes</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">How many hours of sleep do you typically get each night? </div>
+            <div class="options-container">
+                <label><input type="radio" name="hours" value="less">Less than 5 hours</label>
+                <label><input type="radio" name="hours" value="medium">5-7hours</label>
+                <label><input type="radio" name="hours" value="large"7-8 hours</label>
+                <label><input type="radio" name="hours"value="larger">More than 8 hours</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">What obstacles do yu face in maintaining an exercise routine? </div>
+            <div class="options-container">
+                <label><input type="radio" name="obstacles" value="time">Lack of time</label>
+                <label><input type="radio" name="obstacles" value="motivation">Lack of motivation</label>
+                <label><input type="radio" name="obstacles" value="physical">Physical limitations or injury</label>
+                <label><input type="radio" name="obstacles" value="equipment">Lack of access to equipment or facilities</label>
+                <label><input type="radio" name="obstacles" value="other">Other</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">Would you prefer personalized workout recommendations based on your preferences ? </div>
+            <div class="options-container">
+                <label><input type="radio" name="personalization">Yes,I prefer tailored workouts</label>
+                <label><input type="radio" name="personalization">No,I prefer choosing on my own</label>
+                <label><input type="radio" name="personalization">Maybe,depending on the plan</label>
+            </div>
+        </div>
+
+        <div class="question-slide">
+            <div class="question-title">How do you prefer to receive fitness advice and motivation ? </div>
+            <div class="options-container">
+                <label><input type="radio" name="advice" value="mail">Emails with tips and progress reminders</label>
+                <label><input type="radio" name="advice" value="text">Text Messages</label>
+                <label><input type="radio" name="advice" value="social">Social media posts or group chats</label>
+                <label><input type="radio" name="advice" value="video">Regular video or podcast updates</label>
+            </div>
+        </div>
+        <div class="navigation-buttons">
+            <button type="button" id="prevButton" onclick="changeSlide(-1)" disabled>Previous</button>
+            <button type="button" id="nextButton" onclick="changeSlide(1)">Next</button>
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.question-slide');
+
+    function changeSlide(step) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide += step;
+        currentSlide = Math.min(Math.max(currentSlide, 0), slides.length - 1);
+        slides[currentSlide].classList.add('active');
+
+        document.getElementById('prevButton').disabled = currentSlide === 0;
+        document.getElementById('nextButton').style.display = currentSlide === slides.length - 1 ? 'none' : 'inline-block';
+        document.getElementById('submitButton').style.display = currentSlide === slides.length - 1 ? 'block' : 'none';
+    }
+    let timerSeconds = 0;
+function startTimer() {
+    setInterval(() => {
+        timerSeconds++;
+        const minutes = String(Math.floor(timerSeconds / 60)).padStart(2, '0');
+        const seconds = String(timerSeconds % 60).padStart(2, '0');
+        document.getElementById('timerValue').textContent = `${minutes}:${seconds}`;
+    }, 1000);
+}
+startTimer();
+
+// Motivational Exercise Notifications
+function showExerciseNotification() {
+    const messages = [
+        "Don't forget to take a stretch break!",
+        "Exercise improves your mood!",
+        "Remember, even a short workout counts!",
+        "Keep up the great work, stay active!"
+    ];
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    alert(randomMessage);
+}
+setInterval(showExerciseNotification, 30000); // Show a notification every 30 seconds
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('status') === 'success') {
+    alert('Registration successful! Welcome to the questionnaire page.');
+}
+
+// Save data and redirect to the report page
+/*function saveAndRedirect(event) {
+    event.preventDefault();
+    const formData = new FormData(document.getElementById('questionnaireForm'));
+    const exerciseType = formData.get('exercise-type') || formData.get('exercise-type-other');
+    const fitnessGoal = formData.get('fitness-goal') || formData.get('fitness-goal-other');
+
+    // Store user responses in local storage
+    localStorage.setItem('exerciseType', exerciseType);
+    localStorage.setItem('fitnessGoal', fitnessGoal);
+
+    // Redirect to the report page
+    window.location.href = 'report.html';
+}*/
+document.getElementById('submitBtn').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent form reload
+
+        // Fetch values or default to empty strings
+        const exerciseType = document.querySelector('input[name="exercise"]:checked')?.value || 'No preference selected';
+        const fitnessGoal = document.querySelector('input[name="goal"]:checked')?.value || 'No goal selected';
+
+        // Store the selected or fallback values in localStorage
+        localStorage.setItem('exerciseType', exerciseType);
+        localStorage.setItem('fitnessGoal', fitnessGoal);
+
+        // Redirect to the report page
+        window.location.href = 'report.html';
+    });
+</script>
+
+</body>
+</html>

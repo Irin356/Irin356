@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+ header {
+        
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 10px; 
+  display: flex;
+  align-items: center; 
+  color: aqua;
+  gap: 20px;
+  
+}
+  .himg img {
+            width: 80px; 
+            height: auto;
+       
+            top:20px;
+            left:30px;	
+            margin:0;
+            
+            
+            
+            }
+              header h1 {
+            margin: 0; 
+            font-size:30px;
+            }
+.ring {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
+
+.ring i {
+  position: absolute;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  animation: animate 6s linear infinite;
+}
+
+.ring i:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation-duration: 6s;
+  border: 3px solid lawnGreen;
+}
+
+.ring i:nth-child(2) {
+  width: 90%;
+  height: 90%;
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation-duration: 4s;
+  border: 3px solid red;
+}
+
+.ring i:nth-child(3) {
+  width: 80%;
+  height: 80%;
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation-duration: 10s;
+  border: 3px solid yellow;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.login {
+  position: absolute;
+  width: 100%;
+  padding: 30px 40px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.inputBx {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputBx input {
+  width: 100%;
+  padding: 10px 12px;
+  background: none;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+.inputBx input[type="submit"] {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.inputBx input[type="submit"]:hover {
+  background: linear-gradient(90deg, #fc6767, #ec008c);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.links a {
+  color: #ff7eb3;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: white;
+}
+
+
+
+}
+
+
+}
+
