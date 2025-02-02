@@ -1,39 +1,36 @@
-# [Project Name] 🎯
+# STRIDE JOURNAL 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: TECHNIRA
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: IRIN ANTONY - MODEL ENGINEERING COLLEGE
+- Member 2: NAVAMI SAJEEV- MODEL ENGINEERING COLLEGE
+  
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+https://stridejournal.netlify.app/
 
 ### Project Description
-[2-3 lines about what your project does]
+It is a personalized  exercise tracker with motivation quotes in between viewing the website to motivate.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
-
+The problem is that personalized workouts are difficult to figure out and also doing the workout needs a good motivation .
 ### The Solution
-[How are you solving it? Keep it fun!]
+Doing best suitable exercises can make a good health and well being.Health is a big priority for our future so, this website can make focus more on exercises.
+
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML
+- CSS
+- JAVASCRIPT
+- STORAGE USED:LOCAL STORAGE
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+
 
 ### Implementation
 For Software:
@@ -44,18 +41,24 @@ For Software:
 [commands]
 
 ### Project Documentation
-For Software:
+For Software:1. User Registration and Login:
+   - Create an HTML form for registration with fields for email and password. Use <form> tags and <input> elements.
+   - For the backend, use Java Servlets to handle form submissions. Store user credentials in a database (like MySQL) and implement hashing for passwords for security.
+
+2. Exercise Log:
+   - Build a form where users can enter their exercises, including fields for exercise type, duration, and date.
+   - Use Java to process the form data and store it in the database. You can create a table for exercises with columns for user ID, exercise type, duration, and date.
+
+3. Progress Dashboard:
+   - Use HTML and CSS to create a dashboard layout. You can use a library like Chart.js to visualize data.
+   - Fetch exercise data from the database using local storage and display it in charts. For example, you can show total workout time over weeks or months.
+
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
+https://drive.google.com/file/d/1qUurZub1iJrBBGh35LzlOmElC15x5SkK/view?usp=drive_link,
+https://drive.google.com/file/d/19SCUo6Lba81g7A4WhLeqnpyCoumuuW3Z/view?usp=drive_link, 
+https://drive.google.com/file/d/1Tv54LL-JCc6Y3R4IpFl8xd3XPEdgSVj8/view?usp=drive_link, 
+https://drive.google.com/file/d/1HzG-LZwZCcLgD2rbm16Vq4JWWwwSrJRP/view?usp=drive_link
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
@@ -84,16 +87,12 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/1LZ9-wMVtbcwDMeXH7XgwO8C5s2-T2CwQ/view?usp=drivesdk
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
+-no
 ---
 Made with ❤️ at TinkerHub
